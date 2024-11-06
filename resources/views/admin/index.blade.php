@@ -14,6 +14,7 @@
         <div style="width: 18rem;">
             <div class="card-body">
                 <h1 class="card-text">Titolo:  {{$project->id}} . {{ $project->name }}</h1>
+                <h2 class="card-text">Tipo: {{ $project->types->name }}</h2>
                 <p class="card-text">Data: {{ $project->date }}</p>
                 <p class="card-text">Descrizione: {{ $project->description }}</p>
                 <a class="card-text" href="{{ $project->link }}"> Link </a>

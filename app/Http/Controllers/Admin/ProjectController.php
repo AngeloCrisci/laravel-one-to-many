@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
+use App\Models\Type;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -27,11 +28,15 @@ class ProjectController extends Controller
         $formData = $request->all();
 
         $project = Project::create($formData);
+
         return redirect()->route("admin.index");
     }
 
     public function create(){
-        return view("admin.create");
+        $project = new Project();
+        $types = Type::create();
+
+        return view("admin.create" , compact("types" , "project"));
     }
 
 }
