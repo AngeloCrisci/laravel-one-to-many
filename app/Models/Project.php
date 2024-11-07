@@ -15,7 +15,7 @@ class Project extends Model
         "date",
         "description",
         "link",
-        "types_id",
+        "types_id"
     ];
     public function type(){
         return $this->belongsTo(Type::class);

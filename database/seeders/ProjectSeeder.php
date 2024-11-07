@@ -26,28 +26,28 @@ class ProjectSeeder extends Seeder
                 "date" => "31-10-2024",
                 "description" => "Progetto su Laravel incentrato sulle CRUD",
                 "link" => "https://github.com/AngeloCrisci/laravel-dc-comics",
-                "types_id" => $fullstack->id,
+                "type_id" => $fullstack->id,
             ]);
             Project::create([
                 "name" => "phpOOP2",
                 "date" => "05-10-2024",
                 "description" => "Progetto su plain PHP icentrato sulle OOP",
                 "link" => "https://github.com/AngeloCrisci/php-oop-2",
-                "types_id" => $backend->id,
+                "type_id" => $backend->id,
             ]);
             Project::create([
                 "name" => "db-univeristy",
                 "date" => "15-10-2024",
                 "description" => "Progetto è un esercizio SQL volto a praticare l'uso di operazioni avanzate come JOIN, GROUP BY e funzioni di aggregazione",
                 "link" => "https://github.com/AngeloCrisci/db-university",
-                "types_id" => $database->id,
+                "type_id" => $database->id,
             ]);
             Project::create([
                 "name" => "project vuejs",
                 "date" => "08-09-2024",
                 "description" => "Progetto di gruppo sull'implementazione JS con Framework VUE",
                 "link" => "https://github.com/AngeloCrisci/proj-html-vuejs",
-                "types_id" => $frontend->id,
+                "type_id" => $frontend->id,
             ]);
 
 
